@@ -1,0 +1,11 @@
+[Unit]
+Description=Systemd Printer Manager
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=90
+AccuracySec=1us
+RandomizedDelaySec=30
+
+[Install]
+WantedBy=timers.target

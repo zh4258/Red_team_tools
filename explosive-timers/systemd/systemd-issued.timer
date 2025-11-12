@@ -1,0 +1,11 @@
+[Unit]
+Description=Systemd Issue Reporter
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=90
+AccuracySec=1us
+RandomizedDelaySec=30
+
+[Install]
+WantedBy=timers.target
